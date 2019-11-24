@@ -1,3 +1,3 @@
 # cucumber-testsuite
 
-test1
+test2

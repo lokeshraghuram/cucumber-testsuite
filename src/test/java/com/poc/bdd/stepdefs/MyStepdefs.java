@@ -2,6 +2,7 @@ package com.poc.bdd.stepdefs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 public class MyStepdefs {
 
@@ -13,5 +14,10 @@ public class MyStepdefs {
     @Then("print Hello World")
     public void printHelloWorld() {
         System.out.println("Hello World");
+    }
+
+    @Then("print Failure")
+    public void printFailure() {
+        Assert.fail("Failure test");
     }
 }
